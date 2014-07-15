@@ -24,6 +24,7 @@ What the script does:
     Search in the search depth profiles;
     The choice of sending the "real" or "unreal" profiles;
     Pass profiles in the absence of more than 1 month for the "real" and skip profiles in the absence of "unrealistic" for more than 2 days (yesterday and today) OR a pass for all that were more than 2 days ago, yesterday and today (this to ignore the profile created for advertising brothels with sex for money);
+    Random selection of messages to be sent.
 
 In the long term:
 
@@ -54,6 +55,7 @@ PS:
     поиск анкет в глубину поиска;
     выбор отправки "реальным" или "нереальным" анкетам;
     пропуск анкет в случае отсутствия более 1 месяца для "реальных" и пропуск анкет в случае отсутствия для "нереальных" более 2 дней (сегодня и вчера) ЛИБО пропуск для всех которые были более 2 дней назад, сегодня и вчера (это для того чтобы игнорировать анкету созданные для рекламирования борделей с секса за деньги);
+    случайный выбор сообщения для отправки.
 
 В перспективах:
 
