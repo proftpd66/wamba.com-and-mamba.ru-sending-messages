@@ -12,13 +12,13 @@ for fun wrote a script to send messages to girls 100 messages a day (not spam).
 
 What you need:
 
-    VIP lets you send 100 messages per day, 30 days in 3000 posts
-    Hosting with cron or server (add cron in 01, 06, 12, 18, 23 or less)
+VIP lets you send 100 messages per day, 30 days in 3000 posts
+Hosting with cron or server (add cron in 01, 06, 12, 18, 23 or less)
 
 What the script does:
 
-    Select search criteria, how to send the girls;
-    Bypassing protection from bots sleep pause;
+- Select search criteria, how to send the girls;
+- Bypassing protection from bots sleep pause;
     Only run one copy of the script;
     Exceptions resubmission file black.txt -profiles which were previously sent messages, green.txt profiles that have been on the site for over a month, which skips the script;
     Search in the search depth profiles;
