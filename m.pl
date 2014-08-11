@@ -42,7 +42,7 @@ my ( $login, $pass ) = split( /:/, $acc );
 my $content = $ua->get('http://www.mamba.ru/tips/?tip=login')->content();
 my $s_post = $1 if $content =~ m#s_post=([0-9a-zA-Z]{32})#;
 
-sleep 17;
+#sleep 17;
 
 #print $s_post."\n";
 #print $content;
@@ -68,7 +68,7 @@ my @massages = ( $d =~ /<li>(.*)<\/li>/g );
 #print $_."\n" for  @massages;
 #exit;
 
-sleep 23;
+#sleep 23;
 
 #print  $res->content();
 #exit;
@@ -79,7 +79,7 @@ my $res4 = $ua->get(
 'http://www.mamba.ru/search_ext.phtml?ext=1&t=a&sz=b&ia=M&lf=F&af=18&at=26&s_c=9908_10165_0_0&reply_rate=0&height_from=0&height_to=0&height_unit=cm&weight_from=0&weight_to=55&weight_unit=kg&constitution[Thin]=1&constitution[Sports]=1'
 );
 
-sleep 15;
+#sleep 15;
 
 my $h;
 
@@ -148,7 +148,7 @@ for (@link_page) {
     my $res5 = $ua->get( 'http://www.mamba.ru/search_ext.phtml' . $_ );
 
     #sleep 17;
-    sleep 27;
+    #sleep 27;
 
     my $cc = $res5->content();
 
@@ -254,6 +254,11 @@ foreach ( keys %$h ) {
 
     my $p3 = $res2->content;
 
+    if ($p3 =~ /mb15\sfs15.+100.+\)\./ ) {
+        print "100 LIMIT!\n";
+        exit;
+    }
+
     #Была в течение недели - 36
     #Была месяц назад - 26  - 29
     #Была сегодня в 04:38 29
@@ -302,6 +307,14 @@ foreach ( keys %$h ) {
         set_green($_);
         next;
     }
+
+
+#   if (!$real) {
+#       print "UNREAL!!\n";
+#       set_green($_);
+#       next
+#   }
+
 
 ## remove
 # only for profiles that have been today or yesterday, for real or not real
